@@ -1,14 +1,64 @@
-.body {
-    background-color: #FFCCDB;
+.bg.jpg {
+/* ФОН */
+position: absolute;
+width: 1905px;
+height: 1169px;
+left: 8px;
+top: -2px;
 }
 
 .candleTekst {
-    
+ /* КАТАЛОГ ЛЕДЕНЦОВ */
+    position: absolute;
+    height: 127px;
+    left: 50%;
+    transform: translate(-50%);
+    top: 0%; 
+
+    font-family: 'MuseoModerno';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 127px;
+    text-align: center;
+    letter-spacing: -0.045em;
+
+    background: radial-gradient(31.82% 1316.63% at 44.19% 49.61%, #F7FC14 0%, #FD8E91 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-decoration-color: transparent; /*FIXME что это значит?
+    /* text-fill-color: transparent; */
+
+    border: 3px solid #FDF8F8;    
 }
 
-.candleTable {
-    margin-top: 10px;
-    margin-left: 50px;
+@import url('D:\Сайты\candleSite\catalogPage\bg.jpg');
 
-    
+.candleTable {
+    /* верхние леденцы */
+    position: absolute;
+    height: 225px;
+    left: 50%;
+    width: 60%;
+    transform: translate(-50%);
+    top: 337px;
+}
+
+.candleTable2 {
+    /* Text */
+    position: absolute;
+    height: 23px;
+    left: 50%;
+    transform: translate(-50%);
+    top: 592px;
+
+    font-family: 'Neue Machina';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: -0.045em;
+    color: #000000;
 }
