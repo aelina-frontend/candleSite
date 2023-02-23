@@ -33,6 +33,48 @@ top: -2px;
     border: 3px solid #FDF8F8;    
 }
 
+.candleTekst2 {
+    /* ЛЕДЕНЦЫ НА ЗАКРУТКАХ */
+    position: absolute;
+    width: max-content;
+    height: 57px;
+    top: 237px;
+
+    font-family: 'MuseoModerno';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 57px;
+    text-align: center;
+    letter-spacing: -0.045em;
+    left: 50%;
+    transform: translate(-50%);
+    color: #FE4B51;
+    border: 3px solid #FFFAFA;
+}
+
+.candleTekst3 {
+    /* ЛЕДЕНЦЫ В ФОРМЕ РОЗЫ И СЕРДЕЧКИ */
+
+
+position: absolute;
+width: 679px;
+height: 57px;
+left: calc(50% - 679px/2 - 0.5px);
+top: 692px;
+
+font-family: 'MuseoModerno';
+font-style: normal;
+font-weight: 800;
+font-size: 36px;
+line-height: 57px;
+text-align: center;
+letter-spacing: -0.045em;
+
+color: #FE4B51;
+border: 3px solid #FFFAFA;
+}
+
 @import url('D:\Сайты\candleSite\catalogPage\bg.jpg');
 
 .candleTable {
