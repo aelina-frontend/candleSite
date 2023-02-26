@@ -7,24 +7,36 @@
     </head>
     <body class="body">      
       <img class="logoPicture" src="logo.PNG" alt="ЭмПо - С нами Мир слаще!">
-      <ul class="mainMenu">
-        <li><button id="btn">ГЛАВНАЯ</button></li>
-          <ul>
-            <li><button>БЛА бла бла</button></li>
-            <li><button>БЛА бла бла</button></li>
-            <li><button>БЛА бла бла</button></li>
-          </ul>
-        <li><button>АССОРТИМЕНТ</button></li>
-        <li><button>ИСТОРИЯ</button></li>
-        <li><button>СПОСОБ ОПЛАТЫ</button></li>
-        <li><button>ДОСТАВКА</button></li>
-        <li><button>КОНТАКТЫ</button></li>
+      <div class="mainMenu">
+        <li><button class="menuButton" onclick="document.location='index.html'">ГЛАВНАЯ</button></li>
+        <li><button class="menuButton">АССОРТИМЕНТ</button></li>
+        <li><button class="menuButton">ИСТОРИЯ</button></li>
+        <li><button onclick="changeVisibleMenuItems('payHide')" class="menuButton">СПОСОБ ОПЛАТЫ</button></li>
+        <ul id="payHide">
+          <li><button class="menuButton">Вы можете оплатить как наличными, так с помощью переводов на: <br>Эльсом: +99670779202 <br> Optima Bank: 4169585344359038.</button></li>
+        </ul>
+        <li><button onclick="changeVisibleMenuItems('deleveryHide')" class="menuButton">ДОСТАВКА</button></li>
+        <ul id="deleveryHide">
+          <li><button class="menuButton">Доставка по г. Бишкек от 120 сом и выше. Доставка по регионам, пожалуйста, узнавайте у менеджеров.</button></li>
+        </ul>
+        <li><button class="menuButton">КОНТАКТЫ</button></li>
+        <ul>
+          <li><button class="menuButton">Телефон: <br>Эмир Маратович +996 (507)104 595 ;
+            <br>Мунара Арзыкуловна +(996) 707 792 024 ; 
+            <br>Адрес: ул. Аммосова 54</button></li>
+        </ul>
       </ul>
+
+      <div id="Способ оплаты" class="menuContent">
+        <h4>Способ оплаты</h4>
+        <p>Вы можете оплатить как наличными, так с помощью переводов на: <br>Эльсом: +99670779202 <br> Optima Bank: 4169585344359038.</p>
+      </div>
+
       <div class="candleText">ЛЕДЕНЦЫ</div>
       <div class="candleText2">НА ПАЛОЧКЕ</div>
       <div class="text">Леденцы "ЭмПо"сделанны по старинным рецептам наших бабушек, изпользованы из натуральных продуктов и защищены непромакаемой упаковкой.</div>
       <div class="tab">
-      <button class="catalogBtn" onclick="document.location='catalogPage\\catalogPage.html'">Перейти в каталог</button>
+      <button id="MYIDS" class="catalogBtn" onclick="document.location='catalogPage\\catalogPage.html'">Перейти в каталог</button>
       <script src="app.js"></script>
       <noscript>You need to enable JavaScript to view the full site.</noscript> 
     </body>

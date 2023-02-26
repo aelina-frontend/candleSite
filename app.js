@@ -1,16 +1,29 @@
-'use strict';
-window.addEventListener("load", function() {
-var switcher = document.querySelector('#btn');
-switcher.addEventListener('click', function() {    
-    document.body.classList.toggle('light-theme');
-    document.body.classList.toggle('dark-theme');
-    console.log("dfdfd");
-    const className = document.body.className;
-    if(className == "light-theme") {
-        this.textContent = "dark";
-    } else {
-        this.textContent = "light";
+var hashTable = [];
+
+function changeVisibleMenuItems(idOfItem){
+    let item = document.getElementById(idOfItem);
+    let isFind = false;
+    let i=0;    
+    for(i;i<hashTable.length;i++){
+        if(hashTable[i].id == idOfItem){
+            isFind = true;
+            break;
+        }
+    }    
+    if(isFind){
+        if(hashTable[i].isHide === false){
+            item.style.setProperty('--visionMode','none')
+            hashTable[i].isHide = true
+        }else{
+            hashTable[i].isHide = false
+            item.style.setProperty('--visionMode','block')
+        }
+    }else{
+        let newItem = {
+            id: idOfItem,
+            isHide: false
+        };
+        hashTable.push(newItem);
+        item.style.setProperty('--visionMode','block')
     }
-    console.log('current class name: ' + className);
-});
-});
+}
