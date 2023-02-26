@@ -6,6 +6,9 @@
     left: 0px;
     top: 0px;
 } */
+:root {
+--visionMode: none
+}
 
 .body{
   background: url("bg.jpg");
@@ -48,14 +51,14 @@
   bottom: 0;
   border-top: 1px dashed rgba(255,255,255,.2);
 } */
-.menu-main {
+.mainMenu {
   list-style: none;
   padding: 0;
   margin: 0;
   text-align: center;
 }
-.menu-main:before, 
-.menu-main:after {
+.mainMenu:before, 
+.mainMenu:after {
   content: "";
   position: absolute;
   width: 50px;
@@ -66,19 +69,19 @@
   transform: rotate(360deg);
   z-index: -1;
 }
-.menu-main:before {
+.mainMenu:before {
   left: -30px;
   border-left: 12px solid rgba(255, 255, 255, 0);
 }
-.menu-main:after {
+.mainMenu:after {
   right: -30px;
   border-right: 12px solid rgba(255, 255, 255, 0);
 } 
-.menu-main li {
-  display: inline-block;
-  margin-right: -4px;
+.mainMenu li {
+  display: inline-block;  
 }
-.menu-main a {
+
+.mainMenu button {
   text-decoration: none;
   display: inline-block;
   padding: 30px;
@@ -86,13 +89,20 @@
     
   font-style: normal;
   font-weight: 300;
-
+  border: 0px;
+  background-color: transparent;
   color: black;
   transition: .3s linear;
 }
-.menu-main a.current,
-.menu-main a:hover {background: rgba(229, 13, 13, 0.2);}
-@media (max-width: 200px) {
+.mainMenu ul{
+  display: var(--visionMode);
+}
+
+.mainMenu button.current,
+.mainMenu button:hover {
+  background: rgba(229, 13, 13, 0.2);
+}
+/* @media (max-width: 200px) {
 .top-menu {margin: 0;}
 .menu-main li {
   display: block;
@@ -101,7 +111,7 @@
 .menu-main:before, 
 .menu-main:after {content: none;}
 .menu-main a {display: block;}
-}
+} */
 
 .menu {
     /* Заказать звонок */
@@ -131,7 +141,7 @@
     border-radius: 23px;
 }
 
-  .candleTekst {
+  .candleText {
     /* ЛЕДЕНЦЫ */
     position: absolute;
     width: 616px;
@@ -149,7 +159,7 @@
     letter-spacing: -0.045em;
     color: #FF637C;
   }
-  .candleTekst2 {
+  .candleText2 {
     /* НА ПАЛОЧКЕ */
     position: absolute;
     width: 510px;
@@ -165,7 +175,7 @@
     letter-spacing: -0.055em;
     color: #000000;
   }
-  .tekst {
+  .text {
     position: absolute;
     width: 952px;
     height: 70px;
@@ -242,7 +252,7 @@
   left: calc(50% - 126px/2 + 473px);
   top: calc(50% - 43px/2 + 2.5px);
   border: 2px solid #FEF8F8;
-  } */
+  } 
 
   .btn {
     position: fixed;

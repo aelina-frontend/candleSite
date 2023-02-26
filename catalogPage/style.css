@@ -56,23 +56,22 @@ top: -2px;
 .candleTekst3 {
     /* ЛЕДЕНЦЫ В ФОРМЕ РОЗЫ И СЕРДЕЧКИ */
 
+    position: absolute;
+    width: 679px;
+    height: 57px;
+    left: calc(50% - 679px/2 - 0.5px);
+    top: 692px;
 
-position: absolute;
-width: 679px;
-height: 57px;
-left: calc(50% - 679px/2 - 0.5px);
-top: 692px;
+    font-family: 'MuseoModerno';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 57px;
+    text-align: center;
+    letter-spacing: -0.045em;
 
-font-family: 'MuseoModerno';
-font-style: normal;
-font-weight: 800;
-font-size: 36px;
-line-height: 57px;
-text-align: center;
-letter-spacing: -0.045em;
-
-color: #FE4B51;
-border: 3px solid #FFFAFA;
+    color: #FE4B51;
+    border: 3px solid #FFFAFA;
 }
 
 @import url('D:\Сайты\candleSite\catalogPage\bg.jpg');
@@ -102,5 +101,32 @@ border: 3px solid #FFFAFA;
     line-height: 23px;
     text-align: center;
     letter-spacing: -0.045em;
+    color: #000000;
+}
+.candleTable3 {
+    /* нижние картинки */
+    position: absolute;
+    width: 1041px;
+    height: 175px;
+    left: 50%;
+    transform: translate(-50%);
+    top: 786px;
+}
+.candleTable4 {
+    position: absolute;
+    width: 1256px;
+    height: 60px;
+    left: 50%;
+    transform: translate(-50%);
+    top: 1004px;
+
+    font-family: 'Neue Machina';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 126.5%;
+    /* or 30px */
+    text-align: center;
+    letter-spacing: 0.025em;
     color: #000000;
 }
