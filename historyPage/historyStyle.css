@@ -7,29 +7,19 @@ left: 8px;
 top: -2px;
 }
 
-.historyTekst {
+.historyText {
  /* ИСТОРИЯ ЛЕДЕНЦОВ НА ПАЛОЧКЕ */
     position: absolute;
-    height: 127px;
-    /* left: 50%;
-    transform: translate(-50%); */
-    top: 0%; 
-    width: 100%;
-    align-items: center;
-    text-align: center;
-    align-self: center;
+    height: 127px;       
     font-family: 'MuseoModerno';
     font-style: normal;
-    font-weight: 800;
+    font-weight: 80px;
     font-size: 80px;
     line-height: 127px;
-    text-align: center;
     letter-spacing: -0.045em;
-
 }
 
-.candleTekst2 {
-    /* ЛЕДЕНЦЫ НА ЗАКРУТКАХ */
+.candleText2 {
     position: absolute;
     width: max-content;
     height: 57px;
@@ -43,14 +33,9 @@ top: -2px;
     text-align: center;
     letter-spacing: -0.045em;
     left: 50%;
-    transform: translate(-50%);
-    color: #FE4B51;
-    border: 3px solid #FFFAFA;
 }
 
-.candleTekst3 {
-    /* ЛЕДЕНЦЫ В ФОРМЕ РОЗЫ И СЕРДЕЧКИ */
-
+.candleText3 {
     position: absolute;
     width: 679px;
     height: 57px;
@@ -64,29 +49,22 @@ top: -2px;
     line-height: 57px;
     text-align: center;
     letter-spacing: -0.045em;
-
-    color: #FE4B51;
-    border: 3px solid #FFFAFA; */
 } 
 
 @import url('D:\Сайты\candleSite\historyPage\bg.jpg');
 
 .historyTable {
-    /* верхние леденцы */
-    position: absolute;
+    position: relative;
     height: 225px;
-    left: 50%;
-    width: 60%;
-    transform: translate(-50%);
+    left: 500px;
+    width: 100px;
     top: 337px;
 }
 
 .historyTable2 {
-    /* Text */
     position: absolute;
     height: 23px;
     left: 50%;
-    transform: translate(-50%);
     top: 592px;
 
     font-family: 'Neue Machina';
@@ -99,12 +77,10 @@ top: -2px;
     color: #000000;
 }
 .historyTable3 {
-    /* нижние картинки */
     position: absolute;
     width: 1041px;
     height: 175px;
     left: 50%;
-    transform: translate(-50%);
     top: 786px;
 }
 .historyTable4 {
@@ -112,7 +88,6 @@ top: -2px;
     width: 1256px;
     height: 60px;
     left: 50%;
-    transform: translate(-50%);
     top: 1004px;
 
     font-family: 'Neue Machina';
@@ -130,6 +105,5 @@ top: -2px;
     width: 1256px;
     height: 60px;
     left: 50%;
-    transform: translate(-50%);
     top: 1004px;
 }

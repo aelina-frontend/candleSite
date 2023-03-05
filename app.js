@@ -1,29 +1,49 @@
 var hashTable = [];
+var lastClicked = "";
 
 function changeVisibleMenuItems(idOfItem){
     let item = document.getElementById(idOfItem);
     let isFind = false;
-    let i=0;    
-    for(i;i<hashTable.length;i++){
+    let isFindPast = false;
+    let numbOfNew = -1;    
+    let numbOfPast = -1;
+    for(let i = 0;i<hashTable.length;i++){
         if(hashTable[i].id == idOfItem){
             isFind = true;
-            break;
+            numbOfNew = i;
         }
-    }    
+        if(hashTable[i].id == lastClicked){
+            isFindPast = true;
+            numbOfPast = i;
+        }
+    }     
     if(isFind){
-        if(hashTable[i].isHide === false){
+        if(hashTable[numbOfNew].isHide === false){
             item.style.setProperty('--visionMode','none')
-            hashTable[i].isHide = true
+            hashTable[numbOfNew].isHide = true
+            lastClicked = "";
         }else{
-            hashTable[i].isHide = false
+            if(isFindPast){
+                let item = document.getElementById(lastClicked);
+                item.style.setProperty('--visionMode','none')
+                hashTable[numbOfPast].isHide = true
+            }   
+            hashTable[numbOfNew].isHide = false
             item.style.setProperty('--visionMode','block')
+            lastClicked = idOfItem;
         }
     }else{
         let newItem = {
             id: idOfItem,
             isHide: false
         };
+        if(isFindPast){
+            let item = document.getElementById(lastClicked);
+            item.style.setProperty('--visionMode','none')
+            hashTable[numbOfPast].isHide = true
+        }   
         hashTable.push(newItem);
         item.style.setProperty('--visionMode','block')
+        lastClicked = idOfItem;
     }
 }
