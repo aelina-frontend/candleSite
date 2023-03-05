@@ -1,0 +1,135 @@
+.bg.jpg {
+/* ФОН */
+position: absolute;
+width: 1905px;
+height: 1169px;
+left: 8px;
+top: -2px;
+}
+
+.historyTekst {
+ /* ИСТОРИЯ ЛЕДЕНЦОВ НА ПАЛОЧКЕ */
+    position: absolute;
+    height: 127px;
+    /* left: 50%;
+    transform: translate(-50%); */
+    top: 0%; 
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    font-family: 'MuseoModerno';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 127px;
+    text-align: center;
+    letter-spacing: -0.045em;
+
+}
+
+.candleTekst2 {
+    /* ЛЕДЕНЦЫ НА ЗАКРУТКАХ */
+    position: absolute;
+    width: max-content;
+    height: 57px;
+    top: 237px;
+
+    font-family: 'MuseoModerno';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 57px;
+    text-align: center;
+    letter-spacing: -0.045em;
+    left: 50%;
+    transform: translate(-50%);
+    color: #FE4B51;
+    border: 3px solid #FFFAFA;
+}
+
+.candleTekst3 {
+    /* ЛЕДЕНЦЫ В ФОРМЕ РОЗЫ И СЕРДЕЧКИ */
+
+    position: absolute;
+    width: 679px;
+    height: 57px;
+    left: calc(50% - 679px/2 - 0.5px);
+    top: 692px;
+
+    font-family: 'MuseoModerno';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 57px;
+    text-align: center;
+    letter-spacing: -0.045em;
+
+    color: #FE4B51;
+    border: 3px solid #FFFAFA; */
+} 
+
+@import url('D:\Сайты\candleSite\historyPage\bg.jpg');
+
+.historyTable {
+    /* верхние леденцы */
+    position: absolute;
+    height: 225px;
+    left: 50%;
+    width: 60%;
+    transform: translate(-50%);
+    top: 337px;
+}
+
+.historyTable2 {
+    /* Text */
+    position: absolute;
+    height: 23px;
+    left: 50%;
+    transform: translate(-50%);
+    top: 592px;
+
+    font-family: 'Neue Machina';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: -0.045em;
+    color: #000000;
+}
+.historyTable3 {
+    /* нижние картинки */
+    position: absolute;
+    width: 1041px;
+    height: 175px;
+    left: 50%;
+    transform: translate(-50%);
+    top: 786px;
+}
+.historyTable4 {
+    position: absolute;
+    width: 1256px;
+    height: 60px;
+    left: 50%;
+    transform: translate(-50%);
+    top: 1004px;
+
+    font-family: 'Neue Machina';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 126.5%;
+    /* or 30px */
+    text-align: center;
+    letter-spacing: 0.025em;
+    color: #000000;
+}
+.historyTable5 {
+    position: absolute;
+    width: 1256px;
+    height: 60px;
+    left: 50%;
+    transform: translate(-50%);
+    top: 1004px;
+}
