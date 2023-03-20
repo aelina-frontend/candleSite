@@ -37,7 +37,7 @@ top: -2px;
     position: absolute;
     width: max-content;
     height: 57px;
-    top: 237px;
+    top: 210px;
 
     font-family: 'MuseoModerno';
     font-style: normal;
@@ -58,7 +58,7 @@ top: -2px;
     width: 679px;
     height: 57px;
     left: calc(50% - 679px/2 - 0.5px);
-    top: 692px;
+    top: 650px;
 
     font-family: 'MuseoModerno';
     font-style: normal;
@@ -80,7 +80,7 @@ top: -2px;
     left: 50%;
     width: 60%;
     transform: translate(-50%);
-    top: 337px;
+    top: 300px;
 }
 
 .candleTable2 {
@@ -89,7 +89,7 @@ top: -2px;
     height: 23px;
     left: 50%;
     transform: translate(-50%);
-    top: 592px;
+    top: 560px;
 
     font-family: 'Neue Machina';
     font-style: normal;
@@ -107,7 +107,7 @@ top: -2px;
     height: 175px;
     left: 50%;
     transform: translate(-50%);
-    top: 786px;
+    top: 750px;
 }
 .candleTable4 {
     position: absolute;
@@ -115,7 +115,7 @@ top: -2px;
     height: 60px;
     left: 50%;
     transform: translate(-50%);
-    top: 1004px;
+    top: 990px;
 
     font-family: 'Neue Machina';
     font-style: normal;
@@ -124,6 +124,6 @@ top: -2px;
     line-height: 126.5%;
     /* or 30px */
     text-align: center;
-    letter-spacing: 0.025em;
+    letter-spacing: -0.045em;
     color: #000000;
 }
