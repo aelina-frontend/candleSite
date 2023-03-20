@@ -1,31 +1,4 @@
 
-
-.catalogBtn {
-    position: absolute;
-    width: 241px;
-    height: 54px;
-    left: 42.2%;
-    top: 564px;
-    background: #FF637C;
-    border-radius: 23px;
-  }
-  .catalogBtn:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 52px;
-    background: rgba(255,255,255,0.3);
-    /* border-radius: 1px; */
-    transition: all 0.75s ease;
-  }
-  .catalogBtn:hover:before {
-    width: 100%;
-    height: 100%;
-    border-radius: 23px;
-  }
-
 .body{
   background: url("bg.jpg");
   background-repeat: no-repeat;
@@ -109,6 +82,32 @@
   background-color: transparent;
   color: black;
   transition: .3s linear;
+}
+
+.catalogBtn {
+  position: absolute;
+  width: 241px;
+  height: 54px;
+  left: 42.2%;
+  top: 564px;
+  background: #FF637C;
+  border-radius: 23px;
+}
+.catalogBtn:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 52px;
+  background: rgba(255,255,255,0.3);
+  /* border-radius: 1px; */
+  transition: all 0.75s ease;
+}
+.catalogBtn:hover:before {
+  width: 100%;
+  height: 100%;
+  border-radius: 23px;
 }
 
 #payHide{
@@ -215,11 +214,12 @@
   }
   .text {
     position: absolute;
-    width: 952px;
+    width: 860px;
     height: 70px;
-    left: 22%;
+    left: 27%;
     top: 441px;
-    
+    border-radius: 10px;
+    background-color: rgb(255, 204, 219);
     font-family: 'Neue Machina';
     font-style: normal;
     font-weight: 400;
@@ -314,16 +314,17 @@
     top: 28px;
     background: #FCF5F3;
   }
-  /* .light-theme {
-    
-    --bg: var(--salmon);
-    --fontColor: var(--black);
-    --btnBg: var(--white);
-    --btnFontColor: var(--orangered);
+  
+  #hand {
+    position: absolute;
+    width: 200px;
+    left: 699px;
+    top: 650px;
   }
-  .dark-theme {
-    --bg: var(--orangered);
-    --fontColor: var(--orange);
-    --btnBg:var(--white);
-    --btnFontColor:var(--salmon);
-  } */
+
+  #house {
+    position: absolute;
+    width: 180px;
+    left: 978px;
+    top: 655px;
+  }
