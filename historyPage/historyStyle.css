@@ -1,29 +1,36 @@
 .bg.jpg {
-/* ФОН */
-position: absolute;
-width: 1905px;
-height: 1169px;
-left: 8px;
-top: -2px;
+/* baground pic */
+    position: absolute;
+    width: 1941.45px;
+    height: 1220.38px;
+    left: -12.25px;
+    top: -5.66px;
+    background: url(58931.jpg);
+    transform: rotate(-1.25deg);
 }
 
 .historyText {
  /* ИСТОРИЯ ЛЕДЕНЦОВ НА ПАЛОЧКЕ */
     position: absolute;
-    height: 127px;       
-    font-family: 'MuseoModerno';
+    width: 801px;
+    height: 37px;
+    left: 476px;
+    top: 0;
+
+    font-family: 'Neue Machina';
     font-style: normal;
-    font-weight: 80px;
-    font-size: 80px;
-    line-height: 127px;
-    letter-spacing: -0.045em;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 92.5%;
+    color: #FE4B51;
 }
 
-.candleText2 {
+.historyText2 {
+    /* Первые леденцы на палочке */
     position: absolute;
     width: max-content;
     height: 57px;
-    top: 237px;
+    top: 50px;
 
     font-family: 'MuseoModerno';
     font-style: normal;
@@ -33,14 +40,16 @@ top: -2px;
     text-align: center;
     letter-spacing: -0.045em;
     left: 50%;
+    transform: translate(-50%);
+    color: #FE4B51;
 }
 
-.candleText3 {
+.historyText3 {
+    /* Американские леденцы lollipop */
     position: absolute;
-    width: 679px;
+    width: max-content;
     height: 57px;
-    left: calc(50% - 679px/2 - 0.5px);
-    top: 692px;
+    top: 200px;
 
     font-family: 'MuseoModerno';
     font-style: normal;
@@ -49,61 +58,114 @@ top: -2px;
     line-height: 57px;
     text-align: center;
     letter-spacing: -0.045em;
-} 
+    left: 50%;
+    transform: translate(-50%);
+    color: #FE4B51;
+}
 
+.historyText4 {
+    /* Петушки на палочках в России */
+    position: absolute;
+    width: max-content;
+    height: 57px;
+    top: 350px;
+
+    font-family: 'MuseoModerno';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 57px;
+    text-align: center;
+    letter-spacing: -0.045em;
+    left: 50%;
+    transform: translate(-50%);
+    color: #FE4B51;
+}
 @import url('D:\Сайты\candleSite\historyPage\bg.jpg');
 
 .historyTable {
-    position: relative;
-    height: 225px;
-    left: 500px;
-    width: 100px;
-    top: 337px;
+   /* тигр */
+   position: absolute;
+    width: 1460px;
+    height: 323px;
+    left: 72px;
+    top: 121px;
+    margin-bottom: 500px;
 }
-
-.historyTable2 {
+.candleTable2 {
     position: absolute;
-    height: 23px;
-    left: 50%;
-    top: 592px;
-
-    font-family: 'Neue Machina';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 23px;
-    text-align: center;
-    letter-spacing: -0.045em;
-    color: #000000;
+    width: 1467px;
+    height: 327px;
+    left: 256px;
+    top: 469px;
+    margin-bottom: 400px;
 }
+
 .historyTable3 {
     position: absolute;
-    width: 1041px;
-    height: 175px;
-    left: 50%;
-    top: 786px;
+    width: 1447px;
+    height: 300px;
+    left: 84px;
+    top: 822px;
+    margin-bottom: 300px;
 }
-.historyTable4 {
-    position: absolute;
-    width: 1256px;
-    height: 60px;
-    left: 50%;
-    top: 1004px;
 
-    font-family: 'Neue Machina';
+/* .candleTable4 {
+    /* text of england */
+    position: absolute;
+    width: 1013px;
+    height: 322px;
+    left: 188px;
+    top: 475px;
+
+    position: absolute;
+    width: 752px;
+    height: 196px;
+    left: 356px;
+    top: 538px;
+
+    font-family: 'Laila';
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 126.5%;
-    /* or 30px */
+    font-size: 20px;
+    line-height: 139.5%;
+    /* or 28px */
     text-align: center;
-    letter-spacing: 0.025em;
+    letter-spacing: 0.31em;
     color: #000000;
-}
+} 
 .historyTable5 {
+    /* мальчик с петушком */
     position: absolute;
-    width: 1256px;
-    height: 60px;
-    left: 50%;
-    top: 1004px;
+    width: 458px;
+    height: 300px;
+    left: 1073px;
+    top: 822px;
+    background: url(petushok-na-palochke-60-gr-1-1.jpg);
+    border-radius: 59px;
 }
+
+.candleTable6 {
+    /* text of russia */
+    position: absolute;
+    width: 1013px;
+    height: 322px;
+    left: -2px;
+    top: 797px;
+    position: absolute;
+
+    width: 869px;
+    height: 224px;
+    left: 84px;
+    top: 868px;
+
+    font-family: 'Laila';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 139.5%;
+    /* or 28px */
+    text-align: center;
+    letter-spacing: 0.31em;
+    color: #000000;
+    } */
