@@ -3,14 +3,15 @@
   background: url("bg.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
+  
 }
 
 .logoPicture {
     position: absolute;
-    width: 5%;
-    height: 9%;
+    width: 4%;
+    height: 8%;
     left: 5%;
-    top: 0px;
+    top: 19px;
 }
 
 .top-menu {
@@ -75,9 +76,9 @@
   display: inline-block;
   padding: 30px;
   font-family: 'Neue Machina';
-    
+  font-size: 13px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 30;
   border: 0px;
   background-color: transparent;
   color: black;
@@ -181,16 +182,16 @@
   .candleText {
     /* ЛЕДЕНЦЫ */
     position: absolute;
-    width: 616px;
+    width: 50px;
     height: 204px;
-    left: 20.1%;
-    top: 158px;
+    left: 280px;
+    top: 100px;
 
     font-family: 'MuseoModerno';
     font-style: normal;
     font-weight: 800;
-    font-size: 128px;
-    line-height: 204px;
+    font-size: 80px;
+    line-height: 180px;
     /* identical to box height */
 
     letter-spacing: -0.045em;
@@ -201,14 +202,14 @@
     position: absolute;
     width: 510px;
     height: 77px;
-    left: 34%;
-    top: 335px;
+    left: 470px;
+    top: 230px;
 
     font-family: 'Neue Machina';
     font-style: normal;
     font-weight: 800;
-    font-size: 80px;
-    line-height: 77px;
+    font-size: 60px;
+    line-height: 57px;
     letter-spacing: -0.055em;
     color: #000000;
   }
@@ -216,26 +217,27 @@
     position: absolute;
     width: 860px;
     height: 70px;
-    left: 27%;
-    top: 441px;
+    left: 200px;
+    top: 310px;
     border-radius: 10px;
-    background-color: rgb(255, 204, 219);
+    /* background-color: rgb(255, 204, 219); */
     font-family: 'Neue Machina';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 16px;
     line-height: 23px;
     text-align: center;
     color: #000000;
   }
   .catalogBtn {
     position: absolute;
-    width: 241px;
-    height: 54px;
-    left: 42.2%;
-    top: 564px;
+    width: 190px;
+    height: 44px;
+    left: 530px;
+    top: 410px;
     background: #FF637C;
-    border-radius: 23px;
+    border-radius: 20px;
+    border-color: rgb(180, 180, 180);
   }
   .catalogBtn:before {
     content: '';
@@ -243,7 +245,7 @@
     top: 0;
     left: 0;
     width: 0;
-    height: 52px;
+    height: 44px;
     background: rgba(255,255,255,0.3);
     /* border-radius: 1px; */
     transition: all 0.75s ease;
@@ -317,14 +319,16 @@
   
   #hand {
     position: absolute;
-    width: 200px;
-    left: 699px;
-    top: 650px;
+    height: 70px;
+    width: 170px;
+    left: 480px;
+    top: 470px;
   }
 
   #house {
     position: absolute;
-    width: 180px;
-    left: 978px;
-    top: 655px;
+    height: 60px;
+    width: 150px;
+    left: 660px;
+    top: 475px;
   }
