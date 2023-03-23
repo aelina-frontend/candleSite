@@ -1,126 +1,67 @@
-
-.body{
+body {
     background: url("bg.jpg");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: 100%;
-    
-  }
-.candleTekst {
- /* КАТАЛОГ ЛЕДЕНЦОВ */
-    position: absolute;
-    height: 127px;
-    left: 50%;
-    transform: translate(-50%);
-    top: 0%; 
+}
 
+li {
+    display: inline-block;
+    list-style: none;
+    /* border: 1px red solid; */
+    vertical-align: top;
+    padding-top: 4px;
+}
+
+ul {
+    text-align: center;
+}
+
+.li4 {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.li3 {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.mainHeader {
+    /* КАТАЛОГ ЛЕДЕНЦОВ */
     font-family: 'MuseoModerno';
-    font-style: normal;
+    display: block;
     font-weight: 800;
     font-size: 70px;
     line-height: 127px;
     text-align: center;
     letter-spacing: -0.045em;
+}
 
-    background: radial-gradient(31.82% 1316.63% at 44.19% 49.61%, #F7FC14 0%, #FD8E91 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+.gradient {
+    color: transparent;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-decoration-color: transparent; /*FIXME что это значит?
-    /* text-fill-color: transparent; */
-        
+    background-image: radial-gradient(31.82% 1316.63% at 44.19% 49.61%, #F7FC14 0%, #FD8E91 100%)
 }
 
-.candleTekst2 {
+.subHeader {
     /* ЛЕДЕНЦЫ НА ЗАКРУТКАХ */
-    position: absolute;
-    width: max-content;
-    height: 57px;
-    top: 180px;
-
     font-family: 'MuseoModerno';
-    font-style: normal;
     font-weight: 800;
     font-size: 32px;
     line-height: 57px;
     text-align: center;
     letter-spacing: -0.045em;
-    left: 50%;
-    transform: translate(-50%);
     color: #FE4B51;
 }
 
-.candleTekst3 {
-    /* ЛЕДЕНЦЫ В ФОРМЕ РОЗЫ И СЕРДЕЧКИ */
-
-    position: absolute;
-    width: 679px;
-    height: 57px;
-    left: calc(50% - 679px/2 - 0.5px);
-    top: 600px;
-
-    font-family: 'MuseoModerno';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 32px;
-    line-height: 57px;
-    text-align: center;
-    letter-spacing: -0.045em;
-
-    color: #FE4B51;
-}
-
-@import url('D:\Сайты\candleSite\catalogPage\bg.jpg');
-
-.candleTable {
-    /* верхние леденцы */
-    position: absolute;
-    height: 225px;
-    left: 50%;
-    width: 60%;
-    transform: translate(-50%);
-    top: 260px;
-}
-
-.candleTable2 {
+.prettyText {
     /* Text */
-    position: absolute;
-    height: 23px;
-    left: 50%;
-    transform: translate(-50%);
-    top: 510px;
-
     font-family: 'Neue Machina';
-    font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 24px;
     line-height: 23px;
     text-align: center;
     letter-spacing: -0.045em;
-    color: #000000;
-}
-.candleTable3 {
-    /* нижние картинки */
-    position: absolute;
-    width: 1041px;
-    height: 175px;
-    left: 50%;
-    transform: translate(-50%);
-    top: 690px;
-}
-.candleTable4 {
-    position: absolute;
-    height: 23px;
-    left: 50%;
-    transform: translate(-50%);
-    top: 900px;
-
-    font-family: 'Neue Machina';
-    font-style: light;
-    font-size: 24px;
-    line-height: 150%;
-    /* or 30px */
-    text-align: center;
-    letter-spacing: 0.020em;
-
     color: #000000;
 }

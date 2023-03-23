@@ -1,97 +1,57 @@
-.body{
+.body {
     background: url("bg.jpg");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: 110%;
-    
-  }
+}
 
-#mainHeader {
+.mainHeader {
     /* Первые леденцы на палочке */
-    position: fixed;
-    width: max-content;
-    height: 57px;
+    display: block;
+    width: 100%;
     top: 0px;
-
     font-family: 'MuseoModerno';
     font-style: normal;
     font-weight: 900;
-    font-size: 30px;
+    font-size: 50px;
     line-height: 57px;
     text-align: center;
     letter-spacing: -0.045em;
-    left: 50%;
-    transform: translate(-50%);
     color: #FE4B51;
 }
 
-#leftText1{
-    position: absolute;
-    width: 1200px;
-    left: 15px;
-    top: 100px;
-    height: 150px;
-
-    font-family: 'Neue Machina';
-    font-style: normal;
-    font-weight: 100;
-    font-size: 16px;
-    line-height: 25px;
-    letter-spacing: -0.010em;
-    color: #000000;
-}
-#leftText2{
-    position: absolute;
-    width: 70%;
-    left: 370px;
-    height: 150px;
-    top: 300px;
-
-    font-family: 'Neue Machina';
-    font-style: normal;
-    font-weight: 100;
-    font-size: 16px;
-    line-height: 25px;
-    letter-spacing: -0.010em;
-    color: #000000;   
-}
-
-#leftText3{
-    position: absolute;
-    width: 70%;
-    left: 15px;
-    height: 150px;
-    top: 500px;
-
-    font-family: 'Neue Machina';
-    font-style: normal;
-    font-weight: 100;
-    font-size: 16px;
-    line-height: 25px;
-    letter-spacing: -0.010em;
-    color: #000000;
-}
-#img1{
-    left: 75%;
-    position: absolute;
-    height: 200px;
-    top: 100px
-}
-#img2{
-    right: 75%;
-    position: absolute;
-    height: 200px;
-    top: 290px
-}
-#img3{
-    left: 75%;
-    position: absolute;
-    height: 200px;
-    top: 480px;
-}
-
-.image{
+.image {
     border-radius: 30px;
     border: 3px solid whitesmoke;
     /* padding: 10px; */
 }
 
+li {
+    display: inline-block;
+    list-style: none;
+    padding: 10px;
+    /* border: 1px red solid; */
+    vertical-align: top;
+}
+
+ul {
+    /* border:1px solid black; */
+    padding-left: 80px;
+}
+
+p1 {
+    font-family: 'Neue Machina';
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: -0.010em;
+    color: #000000;
+    font-size: 25px;
+}
+
+h4 {
+    font-family: 'Neue Machina';
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: -0.010em;
+    color: #000000;
+    font-size: 35px;
+}

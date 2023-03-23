@@ -1,29 +1,29 @@
-
-.body{
+.body {
   background: url("bg.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-  
+
 }
 
 .logoPicture {
-    position: absolute;
-    width: 4%;
-    height: 8%;
-    left: 5%;
-    top: 19px;
+  position: absolute;
+  width: 4%;
+  height: 8%;
+  left: 5%;
+  top: 19px;
 }
 
 .top-menu {
   margin: 0 60px;
   position: relative;
-  background: none;  
+  background: none;
   /* box-shadow: 
     inset 1px 0 0 rgba(255,255,255,.1), 
     inset -1px 0 0 rgba(255,255,255,.1), 
     inset 150px 0 150px -150px rgba(255,255,255,.12), 
     inset -150px 0 150px -150px rgba(255,255,255,.12); */
 }
+
 .top-menu:before,
 .top-menu:after {
   content: "";
@@ -33,6 +33,7 @@
   width: 100%;
   height: 3px;
 }
+
 /* .top-menu:before {
   top: 0;
   border-bottom: 1px dashed rgba(255,255,255,.2);
@@ -47,7 +48,8 @@
   margin: 0;
   text-align: center;
 }
-.mainMenu:before, 
+
+.mainMenu:before,
 .mainMenu:after {
   content: "";
   position: absolute;
@@ -59,16 +61,19 @@
   transform: rotate(360deg);
   z-index: -1;
 }
+
 .mainMenu:before {
   left: -30px;
   border-left: 12px solid rgba(255, 255, 255, 0);
 }
+
 .mainMenu:after {
   right: -30px;
   border-right: 12px solid rgba(255, 255, 255, 0);
-} 
+}
+
 .mainMenu li {
-  display: inline-block;  
+  display: inline-block;
 }
 
 .mainMenu .menuButton {
@@ -94,6 +99,7 @@
   background: #FF637C;
   border-radius: 23px;
 }
+
 .catalogBtn:before {
   content: '';
   position: absolute;
@@ -101,39 +107,41 @@
   left: 0;
   width: 0;
   height: 52px;
-  background: rgba(255,255,255,0.3);
+  background: rgba(255, 255, 255, 0.3);
   /* border-radius: 1px; */
   transition: all 0.75s ease;
 }
+
 .catalogBtn:hover:before {
   width: 100%;
   height: 100%;
   border-radius: 23px;
 }
 
-#payHide{
+#payHide {
   --visionMode: none;
   display: var(--visionMode);
 }
 
-#deleveryHide{
+#deleveryHide {
   --visionMode: none;
   display: var(--visionMode);
 }
 
-#contactsHide{
+#contactsHide {
   --visionMode: none;
   display: var(--visionMode);
 }
 
-.mainMenu ul{
-   display: none;
+.mainMenu ul {
+  display: none;
 }
 
 .mainMenu .menuButton.current,
 .mainMenu .menuButton:hover {
   background: rgba(229, 13, 13, 0.2);
 }
+
 /* @media (max-width: 200px) {
 .top-menu {margin: 0;}
 .menu-main li {
@@ -146,119 +154,125 @@
 } */
 
 .menuContent {
-    display: none;
-    padding: 16px 22px;
-    border: 2px solid rgb(177, 150, 150);
-    border-top: none;
-    background: white;
+  display: none;
+  padding: 16px 22px;
+  border: 2px solid rgb(177, 150, 150);
+  border-top: none;
+  background: white;
 
 }
+
 .menu {
-    position: absolute;
-    width: 138px;
-    height: 15px;
-    left: 1444px;
-    top: 67px;
+  position: absolute;
+  width: 138px;
+  height: 15px;
+  left: 1444px;
+  top: 67px;
 
-    font-family: 'Neue Machina';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 15px;
-    color: #FFFFFF;
+  font-family: 'Neue Machina';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 15px;
+  color: #FFFFFF;
 
-    box-sizing: border-box;
+  box-sizing: border-box;
 
-    position: absolute;
-    width: 241px;
-    height: 54px;
-    left: 1395px;
-    top: 5px;
-    background: rgba(255, 99, 124, 0.75);
-    border: 3px solid rgba(252, 248, 248, 0.8);
-    border-radius: 23px;
+  position: absolute;
+  width: 241px;
+  height: 54px;
+  left: 1395px;
+  top: 5px;
+  background: rgba(255, 99, 124, 0.75);
+  border: 3px solid rgba(252, 248, 248, 0.8);
+  border-radius: 23px;
 }
 
-  .candleText {
-    /* ЛЕДЕНЦЫ */
-    position: absolute;
-    width: 50px;
-    height: 204px;
-    left: 280px;
-    top: 100px;
+.candleText {
+  /* ЛЕДЕНЦЫ */
+  position: absolute;
+  width: 50px;
+  height: 204px;
+  left: 280px;
+  top: 100px;
 
-    font-family: 'MuseoModerno';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 80px;
-    line-height: 180px;
-    /* identical to box height */
+  font-family: 'MuseoModerno';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 180px;
+  /* identical to box height */
 
-    letter-spacing: -0.045em;
-    color: #FF637C;
-  }
-  .candleText2 {
-    /* НА ПАЛОЧКЕ */
-    position: absolute;
-    width: 510px;
-    height: 77px;
-    left: 470px;
-    top: 230px;
+  letter-spacing: -0.045em;
+  color: #FF637C;
+}
 
-    font-family: 'Neue Machina';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 60px;
-    line-height: 57px;
-    letter-spacing: -0.055em;
-    color: #000000;
-  }
-  .text {
-    position: absolute;
-    width: 860px;
-    height: 70px;
-    left: 200px;
-    top: 310px;
-    border-radius: 10px;
-    /* background-color: rgb(255, 204, 219); */
-    font-family: 'Neue Machina';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 23px;
-    text-align: center;
-    color: #000000;
-  }
-  .catalogBtn {
-    position: absolute;
-    width: 190px;
-    height: 44px;
-    left: 530px;
-    top: 410px;
-    background: #FF637C;
-    border-radius: 20px;
-    border-color: rgb(180, 180, 180);
-  }
-  .catalogBtn:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 44px;
-    background: rgba(255,255,255,0.3);
-    /* border-radius: 1px; */
-    transition: all 0.75s ease;
-  }
-  .catalogBtn:hover:before {
-    width: 100%;
-    height: 100%;
-    border-radius: 23px;
-  }
+.candleText2 {
+  /* НА ПАЛОЧКЕ */
+  position: absolute;
+  width: 510px;
+  height: 77px;
+  left: 470px;
+  top: 230px;
+
+  font-family: 'Neue Machina';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 57px;
+  letter-spacing: -0.055em;
+  color: #000000;
+}
+
+.text {
+  position: absolute;
+  width: 860px;
+  height: 70px;
+  left: 200px;
+  top: 310px;
+  border-radius: 10px;
+  /* background-color: rgb(255, 204, 219); */
+  font-family: 'Neue Machina';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  color: #000000;
+}
+
+.catalogBtn {
+  position: absolute;
+  width: 190px;
+  height: 44px;
+  left: 530px;
+  top: 410px;
+  background: #FF637C;
+  border-radius: 20px;
+  border-color: rgb(180, 180, 180);
+}
+
+.catalogBtn:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.3);
+  /* border-radius: 1px; */
+  transition: all 0.75s ease;
+}
+
+.catalogBtn:hover:before {
+  width: 100%;
+  height: 100%;
+  border-radius: 23px;
+}
 
 
-  .menu-main2 {
-    /* Контакты */
+.menu-main2 {
+  /* Контакты */
   width: 76px;
   height: 5px;
 
@@ -275,7 +289,7 @@
   order: 0;
   flex-grow: 0;
 
-    /* Frame 1 */
+  /* Frame 1 */
   box-sizing: border-box;
   /* Auto layout */
   display: flex;
@@ -291,44 +305,44 @@
   left: calc(50% - 126px/2 + 473px);
   top: calc(50% - 43px/2 + 2.5px);
   border: 2px solid #FEF8F8;
-  } 
+}
 
-  .btn {
-    position: fixed;
-    width: 77px;
-    height: 33px;
-    right: 156px;
-    top: 62px;
+.btn {
+  position: fixed;
+  width: 77px;
+  height: 33px;
+  right: 156px;
+  top: 62px;
 
-    font-family: 'Neue Machina';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 14px;
-    text-align: center;
-    color: #000000;
+  font-family: 'Neue Machina';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: #000000;
 
-    /* Ellipse 1 */
-    position: absolute;
-    width: 90px;
-    height: 90px;
-    left: 1750px;
-    top: 28px;
-    background: #FCF5F3;
-  }
-  
-  #hand {
-    position: absolute;
-    height: 70px;
-    width: 170px;
-    left: 480px;
-    top: 470px;
-  }
+  /* Ellipse 1 */
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  left: 1750px;
+  top: 28px;
+  background: #FCF5F3;
+}
 
-  #house {
-    position: absolute;
-    height: 60px;
-    width: 150px;
-    left: 660px;
-    top: 475px;
-  }
+#hand {
+  position: absolute;
+  height: 70px;
+  width: 170px;
+  left: 480px;
+  top: 470px;
+}
+
+#house {
+  position: absolute;
+  height: 60px;
+  width: 150px;
+  left: 660px;
+  top: 475px;
+}
