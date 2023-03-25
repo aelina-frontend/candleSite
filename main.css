@@ -2,7 +2,6 @@
   background: url("bg.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-
 }
 
 .logoPicture {
@@ -13,47 +12,13 @@
   top: 19px;
 }
 
-.top-menu {
-  margin: 0 60px;
-  position: relative;
-  background: none;
-  /* box-shadow: 
-    inset 1px 0 0 rgba(255,255,255,.1), 
-    inset -1px 0 0 rgba(255,255,255,.1), 
-    inset 150px 0 150px -150px rgba(255,255,255,.12), 
-    inset -150px 0 150px -150px rgba(255,255,255,.12); */
-}
-
-.top-menu:before,
-.top-menu:after {
-  content: "";
-  position: absolute;
-  z-index: 2;
-  left: 0;
-  width: 100%;
-  height: 3px;
-}
-
-/* .top-menu:before {
-  top: 0;
-  border-bottom: 1px dashed rgba(255,255,255,.2);
-}
-.top-menu:after {
-  bottom: 0;
-  border-top: 1px dashed rgba(255,255,255,.2);
-} */
 .mainMenu {
-  list-style: none;
-  display: inline-block;
-  padding: 0;
-  margin: 0;
   text-align: center;
 }
 
 .mainMenu:before,
 .mainMenu:after {
   content: "";
-  position: absolute;
   width: 50px;
   height: 0;
   top: 8px;
@@ -76,21 +41,31 @@
 .menuButton {
   text-decoration: none;
   display: inline-block;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 15px;
-  padding-bottom: 10px;
+  padding: 30px;
   font-family: 'Neue Machina';
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 30;
+  font-size: 20px;
+  font-weight: 200;
   border: 0px;
   background-color: transparent;
   color: black;
   transition: .3s linear;
 }
 
+.subMenu{
+  font-family: 'Neue Machina';
+  font-size: 20px;
+  font-weight: 200;
+  transition: .3s linear;
+}
 
+.menuButton.current,
+.menuButton:hover {
+  background: rgba(229, 13, 13, 0.2);
+}
+
+.menuSubButton{
+  text-align: center;
+}
 
 #payHide {
   --visionMode: none;
@@ -107,65 +82,13 @@
   display: var(--visionMode);
 }
 
-
-.mainMenu .menuButton.current,
-.mainMenu .menuButton:hover {
-  background: rgba(229, 13, 13, 0.2);
-}
-
-/* @media (max-width: 200px) {
-.top-menu {margin: 0;}
-.menu-main li {
-  display: block;
-  margin-right: 0;
-}
-.menu-main:before, 
-.menu-main:after {content: none;}
-.menu-main a {display: block;}
-} */
-
-.menuContent {
-  display: none;
-  padding: 16px 22px;
-  border: 2px solid rgb(177, 150, 150);
-  border-top: none;
-  background: white;
-
-}
-
-.menu {
-  position: absolute;
-  width: 138px;
-  height: 15px;
-  left: 1444px;
-  top: 67px;
-
-  font-family: 'Neue Machina';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 15px;
-  color: #FFFFFF;
-
-  box-sizing: border-box;
-
-  position: absolute;
-  width: 241px;
-  height: 54px;
-  left: 1395px;
-  top: 5px;
-  background: rgba(255, 99, 124, 0.75);
-  border: 3px solid rgba(252, 248, 248, 0.8);
-  border-radius: 23px;
-}
-
 .candleText {
   /* ЛЕДЕНЦЫ */
   padding-left: 20%;
   padding-bottom: 0px;
   font-family: 'MuseoModerno';
   font-weight: 800;
-  font-size: 80px;
+  font-size: 120px;
   /* identical to box height */
   letter-spacing: -0.045em;
   color: #FF637C;
@@ -173,122 +96,81 @@
 
 .candleText2 {
   /* НА ПАЛОЧКЕ */
-  margin-top: -15px;
+  margin-top: -25px;
   margin-left: 40%;
   font-family: 'Neue Machina';
   font-weight: 800;
-  font-size: 60px;
+  font-size: 90px;
   letter-spacing: -0.055em;
   color: #000000;
 }
 
 .text {
+  margin-top: 20px;
   margin-left: 22%;
   margin-right: 30%;
   font-family: 'Neue Machina';
   font-weight: 400;
-  font-size: 16px;
-  line-height: 23px;
+  font-size: 24px;
+  line-height: 36px;
   text-align: center;
   color: #000000;
 }
 
 .catalogBtn {
+  position: relative;
   margin-top: 40px;
   margin-bottom: 35px;
-  width: 190px;
-  height: 44px;
+  margin-left: calc(46% - 285px/2);
+  font-size: 20px;
+  width: 285px;
+  height: 66px;
   background: #FF637C;
-  border-radius: 20px;
+  border-radius: 30px;
   border-color: rgb(180, 180, 180);
 }
 
+.catalogBtn::before {
+  transition: all 0.75s ease;
+  content: '';
+  width: 0%;
+  height: 100%;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.catalogBtn:hover::before {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* 
 .catalogBtn:before {
+  position: relative;
   width: 190px;
   height: 44px;
-  background: rgba(255, 255, 255, 0.3);
-  /* border-radius: 1px; */
-  transition: all 0.75s ease;
-  border-radius: 20px;
-}
-
+  background: rgba(255, 255, 255, 0.3);  /* border-radius: 1px; */
+/* border-radius: 20px;
+} */
+/* 
 .catalogBtn:hover:before {
-  width: 100%;
-  height: 100%;
+  position: relative;
   border-radius: 20px;
-}
-
-
-.menu-main2 {
-  /* Контакты */
-  width: 76px;
-  height: 5px;
-
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
-  /* identical to box height */
-  color: #FFFFFF;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-
-  /* Frame 1 */
-  box-sizing: border-box;
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 12px 25px;
-  gap: 10px;
-
-  position: absolute;
-  width: 126px;
-  height: 43px;
-  left: calc(50% - 126px/2 + 473px);
-  top: calc(50% - 43px/2 + 2.5px);
-  border: 2px solid #FEF8F8;
-}
-
-.btn {
-  position: fixed;
-  width: 77px;
-  height: 33px;
-  right: 156px;
-  top: 62px;
-
-  font-family: 'Neue Machina';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 14px;
-  text-align: center;
-  color: #000000;
-
-  /* Ellipse 1 */
-  position: absolute;
-  width: 90px;
-  height: 90px;
-  left: 1750px;
-  top: 28px;
-  background: #FCF5F3;
-}
+} */
 
 #hand {
   display: inline-block;
-  width: 37px;
+  width: 55.5px;
   vertical-align: top;
 }
 
 #house {
   display: inline-block;
-  width: 37px;
+  width: 55.5px;
   vertical-align: top;
-  margin-right: 15px; 
-  margin-left: 15px; 
+  margin-right: 15px;
+  margin-left: 40px;
 }

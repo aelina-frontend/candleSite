@@ -9,39 +9,36 @@
 
 <body class="body">
   <img class="logoPicture" src="logo.PNG" alt="ЭмПо - С нами Мир слаще!">
-  <div style="display: block; text-align: center;">
+  <div class="mainMenu">
     <button class="menuButton" onclick="document.location='index.html'">ГЛАВНАЯ</button>
-    <button class="menuButton"
-        onclick="document.location='catalogPage/catalogPage.html'">АССОРТИМЕНТ</button>
+    <button class="menuButton" onclick="document.location='catalogPage/catalogPage.html'">АССОРТИМЕНТ</button>
     <button class="menuButton" onclick="document.location='historyPage/historyPage.html'">ИСТОРИЯ</button>
     <button onclick="changeVisibleMenuItems('payHide')" class="menuButton">СПОСОБ ОПЛАТЫ</button>
     <button onclick="changeVisibleMenuItems('deleveryHide')" class="menuButton">ДОСТАВКА</button>
     <button onclick="changeVisibleMenuItems('contactsHide')" class="menuButton">КОНТАКТЫ</button>
   </div>
-  <div style="height: 100px; text-align: center;">
-    <button class="menuSubButton" id="payHide">
-      <h3>Вы можете оплатить как наличными, так с помощью переводов на: <br>Эльсом: +99670779202</h3>
-    </button>
-    <button class="menuSubButton" id="deleveryHide">
-      <h3>Доставка по г. Бишкек от 120 сом и выше. Доставка по регионам, пожалуйста, узнавайте у менеджеров.</h3>
-    </button>
-    <button class="menuSubButton" id="contactsHide">
-      <h3>Телефон: +996 (507)104 595 - Эмир Маратович;
-        <br>+(996) 707 792 024 - Мунара Арзыкуловна;
-        <br>Адрес: ул. Аммосова 54
-      </h3>
-    </button>
+  <div style="height: 100px; text-align: center; vertical-align:middle; padding-top: 20px;">
+    <h3 id="payHide" class="subMenu">Вы можете оплатить как наличными, так с помощью переводов:<br>Эльсом: +99670779202
+    </h3>
+    <h3 id="deleveryHide" class="subMenu">Доставка по г. Бишкек от 120 сом и выше.<br>Доставку по регионам, пожалуйста,
+      узнавайте у
+      менеджеров.</h3>
+    <h3 id="contactsHide" class="subMenu">Телефон: +996 (507)104 595 - Эмир Маратович;
+      <br>+(996) 707 792 024 - Мунара Арзыкуловна;
+      <br>Адрес: ул. Аммосова 54
+    </h3>
   </div>
   <div class="candleText">ЛЕДЕНЦЫ</div>
   <div class="candleText2">НА ПАЛОЧКЕ</div>
   <div class="text">Леденцы "ЭмПо"сделанны по старинным рецептам наших бабушек, изпользованы из натуральных
     продуктов и защищены непромакаемой упаковкой.</div>
-    <div style="text-align: center;"><button class="catalogBtn" onclick="document.location='catalogPage/catalogPage.html'">Перейти в
-    каталог</button></div>
-  <div style="text-align: center;">
-    <img id="hand" src="image\hand7.png"/>
-    <span style="display: inline-block; text-align: left; vertical-align: bottom; margin-left: 10px; ">Из натуральных<br>ингридиентов</span>
-    <img id="house" src="image\house6.png"  />
+  <button class="catalogBtn" onclick="document.location='catalogPage/catalogPage.html'">Перейти в
+    каталог</button>
+  <div style="text-align: center; margin-top: 20px;">
+    <img id="hand" src="image\hand7.png" />
+    <span style="display: inline-block; text-align: left; vertical-align: bottom; margin-left: 10px; ">Из
+      натуральных<br>ингридиентов</span>
+    <img id="house" src="image\house6.png" />
     <span style="display: inline-block; text-align: left; vertical-align: bottom; ">Доставка до<br>вашего дома</span>
   </div>
   <script src="app.js"></script>

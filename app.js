@@ -29,7 +29,7 @@ function changeVisibleMenuItems(idOfItem){
                 hashTable[numbOfPast].isHide = true
             }   
             hashTable[numbOfNew].isHide = false
-            item.style.setProperty('--visionMode','block')
+            item.style.setProperty('--visionMode','inline')
             lastClicked = idOfItem;
         }
     }else{
@@ -43,7 +43,7 @@ function changeVisibleMenuItems(idOfItem){
             hashTable[numbOfPast].isHide = true
         }   
         hashTable.push(newItem);
-        item.style.setProperty('--visionMode','block')
+        item.style.setProperty('--visionMode','inline')
         lastClicked = idOfItem;
     }
 }
