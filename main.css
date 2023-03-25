@@ -51,7 +51,7 @@
   transition: .3s linear;
 }
 
-.subMenu{
+.subMenu {
   font-family: 'Neue Machina';
   font-size: 20px;
   font-weight: 200;
@@ -63,7 +63,7 @@
   background: rgba(229, 13, 13, 0.2);
 }
 
-.menuSubButton{
+.menuSubButton {
   text-align: center;
 }
 
@@ -147,20 +147,6 @@
   background: rgba(255, 255, 255, 0.3);
 }
 
-/* 
-.catalogBtn:before {
-  position: relative;
-  width: 190px;
-  height: 44px;
-  background: rgba(255, 255, 255, 0.3);  /* border-radius: 1px; */
-/* border-radius: 20px;
-} */
-/* 
-.catalogBtn:hover:before {
-  position: relative;
-  border-radius: 20px;
-} */
-
 #hand {
   display: inline-block;
   width: 55.5px;
@@ -173,4 +159,12 @@
   vertical-align: top;
   margin-right: 15px;
   margin-left: 40px;
+}
+
+.toolsText{
+  font-family: 'Neue Machina';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
 }
