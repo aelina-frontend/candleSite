@@ -7,13 +7,12 @@
 .logoPicture {
   position: absolute;
   width: 4%;
-  height: 8%;
   left: 5%;
   top: 19px;
 }
 
 .mainMenu {
-  text-align: center;
+  text-align: center;  
 }
 
 .mainMenu:before,
@@ -26,6 +25,7 @@
   border-bottom: 18px solid #5A394E; */
   transform: rotate(360deg);
   z-index: -1;
+  
 }
 
 .mainMenu:before {
@@ -49,13 +49,22 @@
   background-color: transparent;
   color: black;
   transition: .3s linear;
+  text-shadow: 3px 0 3px  rgb(255, 204, 219), 
+0 3px 3px  rgb(255, 204, 219), 
+-3px 0 3px  rgb(255, 204, 219), 
+0 -3px 3px  rgb(255, 204, 219);
 }
 
 .subMenu {
   font-family: 'Neue Machina';
   font-size: 20px;
-  font-weight: 200;
+  font-weight: 350;
+  /* background-color: rgb(255, 204, 219); */
   transition: .3s linear;
+  text-shadow: 3px 0 3px  rgb(255, 204, 219), 
+0 3px 3px  rgb(255, 204, 219), 
+-3px 0 3px  rgb(255, 204, 219), 
+0 -3px 3px  rgb(255, 204, 219);
 }
 
 .menuButton.current,
@@ -92,6 +101,10 @@
   /* identical to box height */
   letter-spacing: -0.045em;
   color: #FF637C;
+  text-shadow: 3px 0 3px  rgb(255, 204, 219), 
+0 3px 3px  rgb(255, 204, 219), 
+-3px 0 3px  rgb(255, 204, 219), 
+0 -3px 3px  rgb(255, 204, 219);
 }
 
 .candleText2 {
@@ -103,6 +116,10 @@
   font-size: 90px;
   letter-spacing: -0.055em;
   color: #000000;
+  text-shadow: 3px 0 3px  rgb(255, 204, 219), 
+0 3px 3px  rgb(255, 204, 219), 
+-3px 0 3px  rgb(255, 204, 219), 
+0 -3px 3px  rgb(255, 204, 219);
 }
 
 .text {
@@ -115,6 +132,10 @@
   line-height: 36px;
   text-align: center;
   color: #000000;
+  text-shadow: 3px 0 3px  rgb(255, 204, 219), 
+0 3px 3px  rgb(255, 204, 219), 
+-3px 0 3px  rgb(255, 204, 219), 
+0 -3px 3px  rgb(255, 204, 219);
 }
 
 .catalogBtn {
@@ -167,4 +188,8 @@
   font-size: 14px;
   line-height: 17px;
   color: #000000;
+  text-shadow: 3px 0 3px  rgb(255, 204, 219), 
+0 3px 3px  rgb(255, 204, 219), 
+-3px 0 3px  rgb(255, 204, 219), 
+0 -3px 3px  rgb(255, 204, 219);
 }
